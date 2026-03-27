@@ -101,7 +101,16 @@ For trivial fixes:
 4. Run compilation check (if bc-compile available):
    bc-compile
 
-5. Present fix to user:
+5. Write changelog entry:
+   Spawn single changelog-writer teammate:
+   "Write a changelog entry for this bug fix.
+    Description: [user's original fix request]
+    Change type: Bug Fix
+    Today's date: [insert current date]
+    Append to CHANGELOG.md in the project root."
+   Wait for confirmation, shut down changelog-writer.
+
+6. Present fix to user:
    "Fix complete → [file path]
 
     Changed: [1-line description]
@@ -111,7 +120,7 @@ For trivial fixes:
 
     Ready to test?"
 
-6. Clean up (shut down developer)
+7. Clean up (shut down developer)
 ```
 
 **No approval gate - present fix directly.**
@@ -159,7 +168,16 @@ For non-trivial fixes:
 6. Run compilation check:
    bc-compile
 
-7. Present fix to user:
+7. Write changelog entry:
+   Spawn single changelog-writer teammate:
+   "Write a changelog entry for this bug fix.
+    Description: [user's original fix request + root cause from architect]
+    Change type: Bug Fix
+    Today's date: [insert current date]
+    Append to CHANGELOG.md in the project root."
+   Wait for confirmation, shut down changelog-writer.
+
+8. Present fix to user:
    "Fix complete → [files changed]
 
     Root cause: [brief explanation]
@@ -175,7 +193,7 @@ For non-trivial fixes:
 
     Ready to test?"
 
-8. Clean up (shut down architect, developer)
+9. Clean up (shut down architect, developer)
 ```
 
 **Still no approval gate, but more context provided.**

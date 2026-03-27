@@ -309,6 +309,24 @@ issues to address [now/later/never].
 
 **This is YOUR synthesis, not a copy-paste of reviewer outputs.**
 
+### Step 8.5: Write Changelog Entry (1-2 min)
+
+```
+Spawn single changelog-writer teammate:
+"Write a changelog entry for the completed development.
+
+Sources (use whichever exist):
+- .dev/01-requirements.md
+- .dev/02-solution-plan.md
+
+Infer change type from the requirements (New Feature or Enhancement).
+Today's date: [insert current date when spawning]
+
+Append entry to CHANGELOG.md in the project root."
+
+Wait for changelog-writer to confirm completion, then shut it down.
+```
+
 ### Step 9: Run Compilation Check (1-2 min)
 
 ```

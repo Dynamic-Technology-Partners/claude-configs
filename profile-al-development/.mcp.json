@@ -18,7 +18,22 @@
       "args": [],
       "env": {
         "BC_CODE_INTEL_CONFIG": "~/claude-configs/profile-al-development/bc-code-intel-config.json"
-      }
+      },
+		"oraios/serena": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"--from",
+				"git+https://github.com/oraios/serena",
+				"serena",
+				"start-mcp-server",
+				"serena@latest",
+				"--context",
+				"ide-assistant"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		}
     }
   }
 }
